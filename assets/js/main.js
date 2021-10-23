@@ -456,24 +456,24 @@ function ecCheckCookie()
     ResponsiveMobileekkaMenu();
 
     /*----------------------------- Main Slider ---------------------- */
-    var EcMainSlider = new Swiper('.ec-slider.swiper-container', {
-        loop: true,
-        speed: 2000,
-        effect: "slide",
-        autoplay: {
-            delay: 7000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+    // var EcMainSlider = new Swiper('.ec-slider.swiper-container', {
+    //     loop: true,
+    //     speed: 2000,
+    //     effect: "slide",
+    //     autoplay: {
+    //         delay: 7000,
+    //         disableOnInteraction: false,
+    //     },
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         clickable: true,
+    //     },
 
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }
-    });
+    //     navigation: {
+    //         nextEl: '.swiper-button-next',
+    //         prevEl: '.swiper-button-prev',
+    //     }
+    // });
 
     /*----------------------------- Quick view Slider ------------------------------ */
     $('.qty-product-cover').slick({
