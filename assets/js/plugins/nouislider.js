@@ -2643,7 +2643,7 @@
 
         // Throw an error if the slider was already initialized.
         if (target.noUiSlider) {
-            throw new Error("noUiSlider (" + VERSION + "): Slider was already initialized.");
+            // throw new Error("noUiSlider (" + VERSION + "): Slider was already initialized.");
         }
 
         // Test the options and create the slider environment;
