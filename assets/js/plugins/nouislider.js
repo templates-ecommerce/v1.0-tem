@@ -2129,7 +2129,7 @@
                     });
                 }
             });
-              checkbox();
+         
         }
 
         // Split out the handle positioning logic so the Move event can use it, too
