@@ -1,0 +1,84 @@
+/* font colors */
+.f-878787{
+    color: #878787;
+}
+.f-878787:hover{
+    color: #878787;
+}
+.f-000{
+    color: #000;
+}
+.f-000:hover{
+    color: #000;
+}
+.f-red{
+    color: red; 
+}
+.f-red:hover{
+    color: red; 
+}
+.f-fff{
+    color: #fff;
+}
+.f-222
+{
+    color: #222;
+}
+.f-ff4e00{
+    color: #ff4e00;
+}
+.f-119{
+   color:rgb(119,119,119);
+}
+/* background colors */
+.b-f6f6f8{
+    background-color: #f6f6f8;
+}
+.b-ffffff{
+    background-color: #ffffff;
+}
+
+.b-01bad4{
+    background-color: #01bad4
+}
+.b-ff0000{
+    background-color: #ff0000
+}
+.b-000{
+    background-color: #000;
+}
+.b-000-i{
+    background-color: #000 !important;
+}
+.b-f6f6f8{
+    background-color: #f6f6f8;
+}
+.b-rgba0{
+    background-color: rgba(0,0,0,.05);
+}
+
+.b-transparent{
+    background-color: transparent;
+}
+
+.b-878787
+{
+    background-color: #878787;
+}
+.b-249-249-249
+{
+    background-color: rgb(249,249,249);
+}
+.b-f7f7f7
+{
+    background-color: #f7f7f7 !important;
+    
+}
+.f-000-i{
+    color: #000 !important;
+}
+/* border color */
+
+.svg-fff{
+    fill: #fff;
+}

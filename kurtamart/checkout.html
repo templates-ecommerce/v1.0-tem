@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kurtamart</title>
+        <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+        <link href="asset/font-awesome-4.7.0/css/font-awesome.min.css"
+            rel="stylesheet">
+
+        <link href="asset/colors.css" rel="stylesheet">
+        <link href="asset/padding.css" rel="stylesheet">
+        <link href="asset/font-size.css" rel="stylesheet">
+        <link href="asset/text-style.css" rel="stylesheet">
+        <link href="asset/media-query.css" rel="stylesheet">
+        <link href="asset/margin.css" rel="stylesheet">
+        <link href="asset/border.css" rel="stylesheet">
+
+        <script src="asset/js/bootstrap.bundle.min.js"></script>
+        <script src="asset/js/jquery.min.js"></script>
+        <link href="asset/main.css" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.min.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,300italic,300">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-12 mgt-70-mobile pgl-5">
+                    <h6 class="fs-30"><a href="index.html" class="f-000 td-none">Kurta Mart</a></h6>
+                </div>
+                <div class="col-lg-5 col-md-5 col-12 b-249-249-249 pgt-70-mobile pgl-5 ">
+                    <div class="row row-mobile-show">
+                        <div class="col-6">
+                            <a href="javascript:;" onclick="dropdownn('mobile-view')" class=" fs-12 td-none"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                Show order summary <i class="fa fa-chevron-down" id="chevron-down" style="font-size: 10px;" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" id="chevron-up" style="font-size: 10px;display: none;" aria-hidden="false"></i>
+                            </a>
+                        </div>
+                        <div class="col-6"><p class="fs-14 pull-right"><strong>PKR&nbsp;2,700.00</strong></p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-7 col-12 pgl-5 order-lg-1 order-2">
+                    
+                    <div class="row mgt-15">
+                        <div class="col-lg-1 col-md-1 col-2 padding-0-mobile"><p
+                                class="fs-12"><a href="cart.html" class="td-none"> Cart</a>
+                                <svg width="10px" height="10px" class="mgl-5"
+                                    viewBox="0 0 10 10" focusable="false"
+                                    aria-hidden="true"><path class="fs-16" d="M2
+                                        1l1-1 4 4 1 1-1 1-4 4-1-1 4-4"></path></svg></p></div>
+                        <div class="col-lg-2 col-md-2 col-3 padding-0-mobile"><p
+                                class="fs-12"><b>Information</b><svg
+                                    width="10px" height="10px" class="mgl-5"
+                                    viewBox="0 0 10 10" focusable="false"
+                                    aria-hidden="true"><path class="fs-16" d="M2
+                                        1l1-1 4 4 1 1-1 1-4 4-1-1 4-4"></path></svg></p></div>
+                        <div class="col-lg-2 col-md-2 col-3 padding-0-mobile"><p
+                                class="fs-12">Shipping <svg width="10px"
+                                    height="10px" class="mgl-5" viewBox="0 0 10
+                                    10" focusable="false" aria-hidden="true"><path
+                                        class="fs-16" d="M2 1l1-1 4 4 1 1-1 1-4
+                                        4-1-1 4-4"></path></svg></p></div>
+                        <div class="col-lg-2 col-md-2 col-3 padding-0-mobile"><p
+                                class="fs-12">Payment <svg width="10px"
+                                    height="10px" class="mgl-5" viewBox="0 0 10
+                                    10" focusable="false" aria-hidden="true"><path
+                                        class="fs-16" d="M2 1l1-1 4 4 1 1-1 1-4
+                                        4-1-1 4-4"></path></svg></p></div>
+                        <div class="col-1"></div>
+                        <div class="col-lg-11 col-md-11 col-12 mgt-20">
+                            <div class="mb-3">
+                                <label for="" class="form-label"><h5>Contact
+                                        information</h5></label>
+                                <input type="text" class="form-control" name=""
+                                    id="" aria-describedby="helpId"
+                                    placeholder="">
+                                <div class="form-check mgt-10">
+                                    <input type="checkbox"
+                                        class="form-check-input mouse-pointer"
+                                        name="" id="checkboxid"
+                                        value="checkedValue" checked>
+                                    <label class="form-check-label
+                                        mouse-pointer" for="checkboxid">
+                                        Email me with news and offers
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-12 mgt-30">
+                            <div class="mb-3">
+                                <label for="" class="form-label mb-3"><h5>Shipping
+                                        address</h5></label>
+                                <select class="form-control mb-3" name="" id="">
+                                    <option>Pakistan</option>
+                                    <option>India</option>
+                                    <option>US</option>
+                                </select>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="mb-3">
+                                        <input type="text" class="form-control"
+                                            name=""
+                                            id="" aria-describedby="helpId"
+                                            placeholder="First name (optional)">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        
+                                        <input type="text"
+                                            class="form-control" name=""
+                                            id="" aria-describedby="helpId"
+                                            placeholder="Last name"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-12 mb-3">
+                            <input type="text" class="form-control" name=""
+                                id="" aria-describedby="helpId"
+                                placeholder="Address">
+                        </div> 
+                        <div class="col-lg-11 col-md-11 col-12 mb-3">
+                            <input type="text" class="form-control" name=""
+                                id="" aria-describedby="helpId"
+                                placeholder="Apartment, suite, etc. (optional)">
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-12 mb-3">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="mb-3">
+                                    <input type="text" class="form-control" name=""
+                                    id="" aria-describedby="helpId"
+                                    placeholder="City">
+                                </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12"><input type="text"
+                                        class="form-control" name=""
+                                        id="" aria-describedby="helpId"
+                                        placeholder="Postal code"></div>
+                            </div>
+                           
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-12 mb-3">
+                            <input type="text" class="form-control" name=""
+                                id="" aria-describedby="helpId"
+                                placeholder="Phone">
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-12 mb-3">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="d-grid gap-2">
+                                        <button type="button" style="height: 50px;" name="" id="" class="btn btn-primary"><span class="_9I39O">Continue to shipping</span></button>
+                                      </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12  d-flex align-items-center justify-content-center-mobile">
+                                    <div class="d-grid gap-2 mobile-padding-20">
+                                        <a href="#" class="td-none "><span class="span-mobile-show"><</span> Return to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mgt-15">
+                        <div class="col-11"><hr></div>
+                        <div class="col-11">
+                            <p class="f-119 fs-14">All rights reserved Kurta Mart</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-12 b-249-249-249 pgl-5 order-lg-2 order-1 hide-mobile" id="mobile-view">
+                    <div class="row">
+                        <div class="col-2">
+                            <span >
+                                <img src="https://cdn.shopify.com/s/files/1/0586/8873/3344/products/957_2_64x64.jpg?v=1633510674" class="img-fluid" alt="">
+                                <span class="border-round text-center">1</span></span>
+                        </div>
+                        <div class="col-5 pgt-6 ">
+                            <p ><strong>Atlas Planet | KM-D657</strong>
+                                <span>2Y</span></p>
+                            
+                        </div>
+                        <div class="col-4 pgt-6 ">
+                            <p class="pull-right">PKR 2,700.00</p>
+                        </div>
+                        <div class="col-11 border-bottom pm-10"></div>
+                        <div class="col-11">
+                            <div class="row pgt-30">
+                                <div class="col-9">
+                                    <div class="mb-3">
+                                      <input type="text" style="height: 50px;" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Discount code">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-secondary btn-lg active b-000
+                                    fs-14 pull-auto-mobile"  style="width: 100%; height: 50px;">
+                                   <span class="col-mobile">Apply</span> 
+                                   <svg viewBox="0 0 20 20" class="svg-fff span-mobile-show" focusable="false" aria-hidden="true"><path d="M15.215 8.743L8.818 2.347 10.586.58 20 9.993l-9.427 9.428-1.768-1.768 6.41-6.41H0v-2.5h15.215z"></path></svg>
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 border-bottom pm-10"></div>
+                        <div class="col-11">
+                            <div class="row pgt-25">
+                                <div class="col-6"><p>Subtotal</p></div>
+                                <div class="col-6"><p class="pull-right"><strong>PKR 2,700.00</strong></p></div>
+                                <div class="col-6"><p>Shipping</p></div>
+                                <div class="col-6"><p class="pull-right fs-14">Calculated at next step</p></div>
+                            </div>
+                        </div>
+                        <div class="col-11 border-bottom pm-10"></div>
+                        <div class="col-11">
+                            <div class="row pgt-25">
+                                <div class="col-6"><p><b>Total</b></p></div>
+                                <div class="col-6"><h5 class="pull-right"><strong>PKR 2,700.00</strong></h5></div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="asset/slider.js"></script>
+    </body>
+</html>

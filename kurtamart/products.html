@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kurtamart</title>
+        <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+        <link href="asset/font-awesome-4.7.0/css/font-awesome.min.css"
+            rel="stylesheet">
+
+        <link href="asset/colors.css" rel="stylesheet">
+        <link href="asset/padding.css" rel="stylesheet">
+        <link href="asset/font-size.css" rel="stylesheet">
+        <link href="asset/text-style.css" rel="stylesheet">
+        <link href="asset/media-query.css" rel="stylesheet">
+        <link href="asset/margin.css" rel="stylesheet">
+        <link href="asset/border.css" rel="stylesheet">
+
+        <script src="asset/js/bootstrap.bundle.min.js"></script>
+        <script src="asset/js/jquery.min.js"></script>
+        <link href="asset/main.css" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.min.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,300italic,300">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
+    </head>
+    <body class="fs-12">
+
+        <div class="mobile-search b-ffffff float-right" id="mobile-search">
+            <div class="row">
+                <div class="col-12 mobile-side-col-10">
+                    <h6 class="f-222 pl-20" style="border-bottom: 1px solid
+                        rgba(129,129,129,.2);padding-bottom: 25px;padding-top:
+                        25px;">SEARCH
+                        OUR SITE <i class="fa fa-times pull-right fs-20 pr-15"
+                            aria-hidden="true"
+                            onclick="showul('mobile-search');$('#mobile-search-modal').modal('hide');"></i></h6>
+                    <div class="text-search-engin d-flex align-items-center
+                        justify-content-center" style="border-bottom: 1px solid
+                        rgba(129,129,129,.2);padding-top: 25px;padding-bottom:
+                        25px;">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mobile-cart b-ffffff float-right scrollbar" id="mobile-cart">
+            <h6 class="f-222 pl-20"style="border-bottom: 1px solid
+              rgba(129,129,129,.2);padding-bottom: 25px;padding-top: 25px;">SHOPPING
+              CART <i class="fa fa-times pull-right fs-20 pr-15" aria-hidden="true"
+                onclick="showul('mobile-cart');$('#mobile-search-modal').modal('hide');"></i></h6>
+            <div class="row pgt-15 pl-15 force-overflow">
+              <div class="col-5 mobile-side-col-10">
+                <img style="width: 100%;"
+                  src="https://cdn.shopify.com/s/files/1/0586/8873/3344/products/662_2_7d27f0db-2c7c-452f-b882-142d5da2f3d0_120x.jpg?v=1634298706"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="col-7 mobile-side-col-10 pm-15">
+                <h6>Atlantis Silver | KM-D6</h6>
+                <p>2Y</p>
+                <h6><span style="text-decoration:line-through">Rs.5,560.00</span>&nbsp;&nbsp;<span
+                    style="color: red;">Rs.2,780.0</span></h6>
+                <input type="number" name="" id="" class="form-control" style="width:
+                  50%;">
+                <i class="fa fa-trash-o fs-20 pgt-10" aria-hidden="true"></i>
+      
+              </div>
+      
+              <div class="col-12 fixed-div fixed-w">
+      
+              
+                <div class="row">
+                  <div class="col-6"><p class="fs-20"><b>Subtotal:</b></p></div>
+                  <div class="col-6"><p class="fs-20">Rs.2,700.00</p></div>
+               <div class="col-12">
+                 <p class="f-878787">Taxes and shipping calculated at checkout</p>
+               </div>
+               <div class="col-12">
+                <button class="btn btn-secondary btn-lg active
+                fs-14 btns-90 b-f7f7f7 f-000-i">
+                Check Out
+            </button>
+               </div>
+               <div class="col-12 mgt-15">
+                <button class="btn btn-secondary btn-lg active b-000-i
+                fs-14 btns-90">
+                Check Out
+            </button>
+               </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        <!-- The Modal -->
+        <div class="modal" id="mobile-search-modal" onclick="showul(showulid);">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="mobile-sidebar b-ffffff" id="mobile-sidebar">
+            <div class="row">
+              <div class="col-10 mobile-side-col-10">
+                <h6 class="text-center f-000 b-rgba0 align-self-center"
+                  style="border-bottom: 1px solid; padding-bottom: 15px;padding-top:
+                  15px;">Menu</h6>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2 pm-10 pgt-10 b-b-rgba129 pl-20"><a href="products.html"
+                      class="text-muted fs-16 f-878787" style="text-decoration:
+                      unset;">New Arrivals &nbsp;<span
+                        class="b-01bad4 border-oval-mobile pl-7 pr-7">NEW</span></a></li>
+                  <li class="mb-2 pm-10 pgt-10 b-b-rgba129 pl-20"><a href="products.html"
+                      class="text-muted fs-16 f-878787" style="text-decoration:
+                      unset;">Shalwar Kameez</a></li>
+                  <li class="mb-2 pm-10 pgt-10 b-b-rgba129 pl-20"><a href="products.html"
+                      class="text-muted fs-16 f-878787" style="text-decoration:
+                      unset;">Kurta Pyjama</a></li>
+                  <li class="mb-2 pm-10 pgt-10 b-b-rgba129 pl-20"><a href="products.html"
+                      class="text-muted fs-16 f-878787" style="text-decoration:
+                      unset;">Waist Coats</a></li>
+                  <li class="mb-2 pm-10 pgt-10 b-b-rgba129 pl-20"><a href="products.html"
+                      class="text-muted fs-16 f-878787" style="text-decoration:
+                      unset;">Prince Coat</a></li>
+      
+                  <li class="mb-2 pm-10 pgt-10 b-b-rgba129 pl-20"><a href="products.html"
+                      class="text-muted fs-16 f-878787" style="text-decoration:
+                      unset;">Sale &nbsp;<span
+                        class="b-ff0000 border-oval-red-mobile pl-7 pr-7">HOT</span></a></li>
+                  <li class="mb-2 pm-10 pgt-10 b-b-rgba129 pl-20"><a href="products.html"
+                      class="text-muted fs-16 f-878787" style="text-decoration:
+                      unset;"><i class="fa fa-search fs-20" aria-hidden="true"></i>
+                      &nbsp;Search</a></li>
+                  <li class="mb-2 pm-10 pgt-10 b-b-rgba129 pl-20">
+                    <p>Need help?</p>
+                    <p><i class="fa fa-phone pm-10" aria-hidden="true">&nbsp;&nbsp;&nbsp;+92
+                        321 2203935</i>
+                      <br>
+                      <i class="fa fa-envelope-o" aria-hidden="true">
+                        <a class="f-000" href="mailto:sales@kurtamart.pk"
+                          style="text-decoration: unset;">&nbsp;&nbsp;sales@kurtamart.pk</a>
+                      </i>
+      
+                    </p>
+                  </li>
+      
+      
+                </ul>
+              </div>
+              <div class="col-2 fs-30 mobile-side-col-2 text-center"
+                onclick="showul('mobile-sidebar')">
+                <p>X</p>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="container-fluid text-white b-f6f6f8 pgt-10 pm-10">
+            <div class="row">
+                <div class="col col-mobile">
+                    <i class="fa fa-phone f-878787 pl-10 pr-5"
+                        aria-hidden="true"></i><span
+                        class="pr-15 f-878787">+92 321 2203935</span>
+                    <i class="fa fa-envelope-o f-878787 pr-5"
+                        aria-hidden="true"></i><span
+                        class="f-878787">sales@kurtamart.pk</span>
+                </div>
+                <div class="col f-878787 text-center">
+                    MID-SUMMER SALE DISCOUNT OFF <span class="f-red">50%</span>!
+                    <a
+                        href="#" class="f-878787 td-none">SHOP NOW</a>
+                </div>
+                <div class="col col-mobile">
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-white b-ffffff pgt-10 pm-10 border-t1">
+            <div class="row pm-10 pgt-10">
+                <div class="col f-878787 fs-14 align-self-center psssl-10">
+                    <span class="pl-10 col-mobile"> Free Delivery All Over
+                        Pakistan</span>
+                    <i class="fa fa-bars col-mobile-show fs-20"
+                        aria-hidden="true"
+                        onclick="showul('mobile-sidebar')"></i>
+
+                </div>
+                <div class="col f-878787 text-center">
+                    <div><a class="dib" href="index.html">
+                            <img
+                                src="asset/images/logo.png"
+                                srcset="asset/images/logo.png" alt="Kurta Mart"
+                                style="width:
+                                95px">
+                        </a>
+                    </div>
+                </div>
+                <div class="col f-878787" style="text-align: right;">
+                    <span> <i class="fa fa-search fs-20 pr-5" aria-hidden="true"
+                            data-bs-toggle="modal"
+                            data-bs-target="#mobile-search-modal"
+                            onclick="showul('mobile-search')"></i></span>
+                    <span class="col-mobile"><i class="fa fa-heart-o fs-20 pr-5"
+                            aria-hidden="true"></i><span
+                            class="border-round text-center">0</span></span>
+                    <span data-bs-toggle="modal" data-bs-target="#mobile-search-modal"
+                    onclick="showul('mobile-cart');"><i class="fa
+                            fa-shopping-cart fs-20
+                            pr-5" aria-hidden="true"></i><span
+                            class="border-round text-center">0</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-white b-ffffff col-mobile">
+            <div class="row pgt-25">
+                <div class="col-12 text-center">
+                    <a href="products.html" class="f-878787 td-none fs-14 mgt-3">New Arrivals
+                        <span
+                            class="b-01bad4 border-oval pl-7 pr-7">NEW</span></a>
+                    <a href="products.html" class="f-878787 td-none fs-14 mgt-3">Shalwar
+                        Kameez</a>
+                    <a href="products.html" class="f-878787 td-none fs-14 mgt-3">Waist Coat</a>
+                    <a href="products.html" class="f-878787 td-none fs-14 mgt-3">Prince Coat</a>
+                    <a href="products.html" class="f-878787 td-none fs-14 mgt-3">Sale <span
+                            class="b-ff0000 border-oval-red pl-7 pr-7">HOT</span></a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="container-fluid">
+            
+          
+            <div class="row pgt-25 pm-50">
+                <div class="col-3 pgt-40 text-center pm-10">
+                    <a href="#" class="f-000 td-none mgr-2 pull-left">
+                       <span> <i class="fa fa-sliders fs-20" aria-hidden="true"> Filter</i></span>
+                    </a>
+                </div>
+                <div class="col-6 pgt-40 text-center pm-10">
+                   
+                   <a href="javascript:;" class="f-878787 td-none mgr-2 border-4" onclick="col_view_2()" id="btn-2-col"><i class="fa fa-columns fs-30" aria-hidden="true"></i>
+
+                   </a>
+                   <a href="javascript:;" class="f-000 td-none mgr-2 border-4" onclick="col_view_4()" id="btn-4-col"><i class="fa fa-table fs-30" aria-hidden="true"></i>
+
+                   </a>
+                </div>
+                <div class="col-3 pgt-40 text-center pm-10">
+                   <div class="mb-3">
+                    
+                     <select class="form-control" name="" id="">
+                       <option>Featured</option>
+                       <option>Best selling</option>
+                       <option>Alphabetically, A-Z</option>
+                       <option>Alphabetically, Z-A</option>
+                       <option>Price, low to high</option>
+                       <option>Price, high to low</option>
+                       <option>Date, old to new</option>
+                       <option>Date, new to old</option>
+                     </select>
+                   </div>
+                </div>
+            </div>
+            <!-- <div class="row pgt-50 mgt-70 mgb-25 pm-10 border-4 mgr-1 mgl-1">
+                <div class="col-3 fs-16 td-show">By Title</div>
+                <div class="col-3 fs-16 td-show">By Price</div>
+                <div class="col-3 fs-16 td-show">By Price</div>
+                <div class="col-3 fs-16 td-show">By Vendor</div>
+
+                <div class="col-3">
+                    <div class="mb-3 mgt-20">
+                      <input type="text" class="form-control" placeholder="Search for product title">
+                    </div>
+                    <button class="btn btn-secondary btn-lg active b-000
+                                    fs-14 " style="width: 40%; height: 50px;">
+                                   FILTER
+                                </button>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div> -->
+            <div class="row mgb-25 mgr-1 mgl-1 pm-15 border-bottom">
+                <div class="col-lg-3 col-md-3 col-6 view-col-change">
+                    <div class="card width-10-rem cardhover" style="border:
+                        unset;">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0586/8873/3344/products/IMG_9458copy_360x.jpg?v=1639511440"
+                            class="card-img-top" alt="Black Eclipse | KM-D946b">
+                        <p class="card-text"><h6>Poppy | KM-D944b</h6><span
+                                class="price dib
+                                mb__5"><span class="cb fwn">from</span>
+                                Rs.1,530.00
+                            </span></p>
+                        <div class="btn_add align-self-center cardbtn
+                            col-mobile">
+                            <button class="btn btn-secondary btn-lg active b-000
+                                fs-12 qview-btn"
+                                style="background-color: black;width:
+                                120px;height: 40px;"><span class="qview-hide">
+                                    Quick View</span><i class="fa fa-eye
+                                    qview-show" aria-hidden="true"></i>
+                            </button><br><br>
+                            <button class="btn btn-secondary btn-lg active b-000
+                                fs-12 qshop-btn" data-bs-toggle="modal"
+                                data-bs-target="#newaddtocart"
+                                style="background-color: black;width:
+                                120px;height: 40px;"><span class="qshop-hide">Quick
+                                    Shop</span> <i class="fa fa-shopping-cart
+                                    qshop-show" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="btn_add-mobile align-self-center right-10
+                            col-mobile-show" data-bs-toggle="modal"
+                            data-bs-target="#newaddtocart">
+                            <button class="btn-rounded-top-30 btn btn-secondary
+                                btn-lg active b-000 fs-12"><i class="fa fa-eye"
+                                    aria-hidden="true"></i>
+                            </button>
+                            <br>
+                            <button class="btn-rounded-bottom-30 btn
+                                btn-secondary btn-lg active b-000 fs-12"><i
+                                    class="fa fa-shopping-cart"
+                                    aria-hidden="true"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 view-col-change">
+                    <div class="card width-10-rem cardhover" style="border:
+                        unset;">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0586/8873/3344/products/IMG_9462copy_360x.jpg?v=1639511422"
+                            class="card-img-top" alt="Black Eclipse | KM-D946b">
+                        <p class="card-text"><h6>White Canon | KM-D944a</h6><span
+                                class="price dib mb__5"><span class="cb fwn">from</span>
+                                Rs.1,530.00
+                            </span></p>
+                        <div class="btn_add align-self-center cardbtn
+                            col-mobile">
+                            <button class="btn btn-secondary btn-lg active b-000
+                                fs-12 qview-btn"
+                                style="background-color: black;width:
+                                120px;height: 40px;"><span class="qview-hide">
+                                    Quick View</span><i class="fa fa-eye
+                                    qview-show" aria-hidden="true"></i>
+                            </button><br><br>
+                            <button class="btn btn-secondary btn-lg active b-000
+                                fs-12 qshop-btn" data-bs-toggle="modal"
+                                data-bs-target="#newaddtocart"
+                                style="background-color: black;width:
+                                120px;height: 40px;"><span class="qshop-hide">Quick
+                                    Shop</span> <i class="fa fa-shopping-cart
+                                    qshop-show" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="btn_add-mobile align-self-center right-10
+                            col-mobile-show" data-bs-toggle="modal"
+                            data-bs-target="#newaddtocart">
+                            <button class="btn-rounded-top-30 btn btn-secondary
+                                btn-lg active b-000 fs-12"><i class="fa fa-eye"
+                                    aria-hidden="true"></i>
+                            </button>
+                            <br>
+                            <button class="btn-rounded-bottom-30 btn
+                                btn-secondary btn-lg active b-000 fs-12"><i
+                                    class="fa fa-shopping-cart"
+                                    aria-hidden="true"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mgb-100">
+                <div class="col-12 text-center">
+                    <a href="#" class="f-ff4e00 td-none mgr-2">1</a>
+                    <a href="#" class="f-000 td-none mgr-2">2</a>
+                    <a href="#" class="f-000 td-none mgr-2">Next</a>
+                </div>
+            </div>
+            <footer class="pgt-50 mgb-21">
+                <div class="row pm-100 pl-20">
+                    <div class="col-lg-3 col-md-3 col-12 mgb-20">
+                        <h6 class="text-uppercase font-weight-bold mb-4"
+                            onclick="showul('ul_customer_care_show')">Customer
+                            Care <i
+                                class="fa fa-plus pull-right col-mobile-show"
+                                aria-hidden="true"></i>
+                        </h6>
+                        <ul class="list-unstyled mb-0"
+                            id="ul_customer_care_show">
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">New
+                                    Arrivals</a></li>
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">Shalwar
+                                    Kameez</a></li>
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">Kurta
+                                    Pyjama</a></li>
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12 mgb-20">
+                        <h6 class="text-uppercase font-weight-bold mb-4"
+                            onclick="showul('categories_show')">Categories <i
+                                class="fa
+                                fa-plus pull-right col-mobile-show"
+                                aria-hidden="true"></i></h6>
+                        <ul class="list-unstyled mb-0" id="categories_show">
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">New
+                                    Arrivals</a></li>
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">Shalwar
+                                    Kameez</a></li>
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">Kurta
+                                    Pyjama</a></li>
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12 mgb-20">
+                        <h6 class="text-uppercase font-weight-bold mb-4"
+                            onclick="showul('useful_show')">Useful links <i
+                                class="fa fa-plus
+                                pull-right col-mobile-show" aria-hidden="true"></i></h6>
+                        <ul class="list-unstyled mb-0" id="useful_show">
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">New
+                                    Arrivals</a></li>
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">Shalwar
+                                    Kameez</a></li>
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">Kurta
+                                    Pyjama</a></li>
+                            <li class="mb-2 pm-10"><a href="#" class="text-muted
+                                    fs-16
+                                    f-878787" style="text-decoration: unset;">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12 mgb-20">
+                        <h6 class="text-uppercase font-weight-bold mb-4"
+                            onclick="showul('getintouch_show')">Get in touch <i
+                                class="fa
+                                fa-plus pull-right col-mobile-show"
+                                aria-hidden="true"></i></h6>
+                        <ul class="list-unstyled mb-0" id="getintouch_show">
+                            <li class="mb-2 pm-10">
+                                <i class="fa fa-map-marker fs-20 f-878787"
+                                    aria-hidden="true">
+                                    &nbsp;&nbsp;Main Tariq Road, Karachi
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pakistan</i></li>
+                            <li class="mb-2 pm-10"><i class="fa fa-envelope-o
+                                    fs-20 f-878787"
+                                    aria-hidden="true"> sales@kurtamart.pk</i></li>
+                            <li class="mb-2 pm-10"><i class="fa fa-phone fs-20
+                                    f-878787"
+                                    aria-hidden="true">&nbsp;&nbsp;+92 321
+                                    2203935</i></li>
+                            <li class="mb-2 pm-10"><i class="fa fa-facebook
+                                    fs-20 f-878787
+                                    pl-7" aria-hidden="true"></i>
+                                <i class="fa fa-instagram fs-20 f-878787 pl-20"
+                                    aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row b-f6f6f8 pl-20">
+                    <div class="col-12 pgt-25">
+                        <p class="fs-14 f-878787">Copyright © 2022 Kurta Mart
+                            all rights
+                            reserved.</p>
+                    </div>
+                </div>
+
+            </footer>
+
+
+
+        </div>
+        <div class="mobile-toolbar col-mobile-show positionfixed">
+            <div class="row text-center ml-0 mgt-15">
+              <div class="col-2"><i class="fa fa-th-large fs-25" aria-hidden="true"></i>
+                <p>Shop</p>
+              </div>
+              <div class="col-2"><span><i class="fa fa-heart-o fs-25 pr-5"
+                    aria-hidden="true"></i><span
+                    class="border-round text-center">0</span></span>
+                <p>Wishlist</p>
+              </div>
+              <div class="col-3"> <span data-bs-toggle="modal" data-bs-target="#mobile-search-modal"
+                onclick="showul('mobile-cart');"><i class="fa fa-shopping-cart fs-25 pr-5"
+                    aria-hidden="true"></i><span
+                    class="border-round text-center">0</span></span>
+                <p>Cart</p>
+              </div>
+              <div class="col-2"><i class="fa fa-user-o fs-25" aria-hidden="true"></i>
+                <p>Account</p>
+              </div>
+              <div class="col-3"><i  data-bs-toggle="modal"
+                data-bs-target="#mobile-search-modal"
+                onclick="showul('mobile-search')" class="fa fa-search fs-25" aria-hidden="true"></i>
+                <p>Search</p>
+              </div>
+            </div>
+          </div>
+
+
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="newaddtocart" tabindex="-1" role="dialog"
+            aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered widht-25"
+                role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <img style="width: 100%;"
+                                    src="https://cdn.shopify.com/s/files/1/0586/8873/3344/products/957_2_180x.jpg?v=1633510672"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h6 class="pgt-10">
+                                            <span style="margin-bottom:40px;">Atlas
+                                                Planet | KM-D657</span>
+                                            <br>
+                                            <span
+                                                style="text-decoration:line-through">Rs.5,400.00</span>
+                                            <br>
+                                            <span class="f-ff4e00">Rs.2,700.00</span>
+                                        </h6>
+                                    </div>
+                                    <div class="col-2 fs-20" style="cursor:
+                                        pointer;"
+                                        onclick="$('#newaddtocart').modal('hide');">X</div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-12">
+                                <br>
+                                <h6 class="text-center">Size: </h6>
+                                <br>
+                                <span class="dot active text-center
+                                    align-self-center f-fff">2Y</span><span
+                                    class="dot active text-center
+                                    align-self-center f-fff">2Y</span>
+                                <br> <br> <br>
+                                <div class="d-flex align-items-center
+                                    justify-content-center">
+                                    <input type="number" value="1"
+                                        class="form-control"
+                                        style="width: 30%;">
+
+
+
+                                </div>
+
+                                <button type="button" class="btn btn-secondary
+                                    mgt-15"
+                                    style="width: 100%;">ADD TO CART</button>
+                                <button type="button" class="btn btn-secondary
+                                    mgt-15"
+                                    style="width: 100%;">Buy It Now</button>
+                                <div class="d-flex align-items-center
+                                    justify-content-center">
+                                    <a href="#" class="f-000 mgt-15">View full
+                                        details <i
+                                            class="fa fa-arrow-right"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="asset/slider.js"></script>
+    </body>
+</html>
