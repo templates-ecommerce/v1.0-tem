@@ -58,7 +58,9 @@ function col_view_4(){
   $('#btn-4-col').addClass('f-000');
   }
 
-
+function imagesetsrc(img){
+  $('#setsrcid').attr('src',img);
+}
 
 $(".featured-courses").flickity({
 	wrapAround: true,
