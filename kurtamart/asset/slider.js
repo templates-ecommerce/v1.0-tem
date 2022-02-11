@@ -59,7 +59,8 @@ function col_view_4(){
   }
 
 function imagesetsrc(img){
-  $('#setsrcid').attr('src',img);
+  $(".containerZoom").css("background-image", "url(" + img + ")");
+  $('#imageZoom').attr('src',img);
 }
 
 $(".featured-courses").flickity({
