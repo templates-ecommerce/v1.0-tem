@@ -1,11 +1,12 @@
-var slidesToShowrow = 4;
+var slidesToShowrow = 0;
 
 function myFunction(x) {
   if (x.matches) { // If media query matches
-    slidesToShowrow = 4;
+    slidesToShowrow = 2;
     $(".card").removeClass("width-10-rem");
   } else {
-    slidesToShowrow = 2;
+    slidesToShowrow = 4;
+   
     $(".card").addClass("width-10-rem");
     
   }
