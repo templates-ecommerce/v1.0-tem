@@ -3,6 +3,7 @@ var slidesToShowrow = 0;
 function myFunction(x) {
   if (x.matches) { // If media query matches
     slidesToShowrow = 2;
+    
     $(".card").removeClass("width-10-rem");
   } else {
     slidesToShowrow = 4;
@@ -67,7 +68,3 @@ function imagesetsrc(img){
   $('#imageZoom').attr('src',img);
 }
 
-$(".featured-courses").flickity({
-	wrapAround: true,
-  pageDots: false
-});
