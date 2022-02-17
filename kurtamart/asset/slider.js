@@ -5,6 +5,7 @@ function myFunction(x) {
     slidesToShowrow = 2;
     
     $(".card").removeClass("width-10-rem");
+    $("#img_paddint_left_6").removeAttr("style")
   } else {
     slidesToShowrow = 4;
    
