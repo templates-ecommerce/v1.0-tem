@@ -22,8 +22,8 @@
 }
 
 /* Several different images */
-.bg-one {background-image: url('/images/banner/1.jpg');background-size: cover;}
-.bg-second {background-image: url('/images/banner/2.jpg');background-size: cover;}
+.bg-one {background-image: url('/asset/images/banner/1.jpg');background-size: cover;}
+.bg-second {background-image: url('/asset/images/banner/2.jpg');background-size: cover;}
 
 
 
