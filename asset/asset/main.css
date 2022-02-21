@@ -22,8 +22,8 @@
 }
 
 /* Several different images */
-.bg-one {background-image: url(https://cdn.shopify.com/s/files/1/0586/8873/3344/files/951b_2_1_900x.jpg?v=1640737993);background-size: cover;}
-.bg-second {background-image: url(https://cdn.shopify.com/s/files/1/0586/8873/3344/files/IMG_9383copy_1296x.jpg?v=1640738504);background-size: cover;}
+.bg-one {background-image: url('/images/banner/1.jpg');background-size: cover;}
+.bg-second {background-image: url('/images/banner/2.jpg');background-size: cover;}
 
 
 
