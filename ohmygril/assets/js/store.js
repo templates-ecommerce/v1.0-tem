@@ -990,9 +990,9 @@ jQuery(document).ready(function() {
 
 		
 		
-		$('.item_title').html(item_name);
-		$('.item_description').html(item_desc);
-		$('.itemPriceWithoffier').html(item_price);
+		$('.item_title').html(decodeURIComponent(item_name).replaceAll('+',' '));
+		$('.item_description').html(decodeURIComponent(item_desc).replaceAll('+',' '));
+		$('.itemPriceWithoffier').html(decodeURIComponent(item_price).replaceAll('+',' '));
 		$('#related_item').val((related_item) ? related_item : 0);
 
 		var arr = item_img.split('/');
