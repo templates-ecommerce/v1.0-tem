@@ -299,7 +299,7 @@
                         }
                     }
                 }
-                toggleCategories(list_cat);
+                // toggleCategories(list_cat);
             }
             function searchClose(){
                 $('#search_item').val("");
@@ -318,7 +318,7 @@
                         }
                     }
                 }
-                toggleCategories(list_cat);
+                // toggleCategories(list_cat);
             }
 
 
@@ -836,7 +836,7 @@
                                 }
                             })
                             $(document).ready(function() {
-                                $('#delivery_zones select').select2();
+                                // $('#delivery_zones select').select2();
                             })
                             // $(document).ready(function() {
                             //     if(518 == 12){
