@@ -924,7 +924,7 @@ jQuery(document).ready(function() {
         } else {
             $('.add_to_cart').val('Add to Cart');
         }
-
+		$('.pro_id').val('')
 		$('.item_title').html("");
 		$('.item_description').html("");
 		$('.itemPriceWithoffier').html("");
@@ -985,11 +985,11 @@ jQuery(document).ready(function() {
     	var item_price 	= $(this).data("item-price");    	
     	var item_desc 	= $(this).data("item-desc");    	
     	var item_img 	= $(this).data("item-image");    	
-		
+		var item_id 	= $(this).data("product_id");    	
 		var related_item 	= $(this).data("related-item");    	
 
 		
-		
+		$('.pro_id').val(decodeURIComponent(item_id).replaceAll('+',' '));
 		$('.item_title').html(decodeURIComponent(item_name).replaceAll('+',' '));
 		$('.item_description').html(decodeURIComponent(item_desc).replaceAll('+',' '));
 		$('.itemPriceWithoffier').html(decodeURIComponent(item_price).replaceAll('+',' '));
@@ -1363,7 +1363,7 @@ jQuery(document).ready(function() {
 			
 			console.log('ENHANCED_ECOMMERCE', 'ADD_TO_CART');
 		}
-
+		$('.pro_id').val('')
 		$('.item_title').html("");
 		$('.item_description').html("");
 		$('.itemPriceWithoffier').html("");
