@@ -994,7 +994,7 @@ jQuery(document).ready(function() {
 		$('.pro_id').val(decodeURIComponent(item_id).replaceAll('+',' '));
 		$('.item_title').html(decodeURIComponent(item_name).replaceAll('+',' '));
 		$('.item_description').html(decodeURIComponent(item_desc).replaceAll('+',' '));
-		$('.itemPriceWithoffier').html(decodeURIComponent(item_price).replaceAll('+',' '));
+		$('.itemPriceWithoffier').html('Rs '+decodeURIComponent(item_price).replaceAll('+',' '));
 		$('.img_pro').val(decodeURIComponent(item_img).replaceAll('+',' '));
 		$('#related_item').val((related_item) ? related_item : 0);
 
