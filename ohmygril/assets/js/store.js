@@ -920,7 +920,7 @@ jQuery(document).ready(function() {
 		}
 		
 		if ($('form').hasClass('update-item-modal')) {
-            $('.add_to_cart').val('Update Cart');
+            // $('.add_to_cart').val('Update Cart');
         } else {
             $('.add_to_cart').val('Add to Cart');
         }
@@ -1021,7 +1021,7 @@ jQuery(document).ready(function() {
 	
 	
 	$('#food-item-modal').on('hidden.bs.modal', function () {
-		$('.add_to_cart').prop( "disabled", true );
+		// $('.add_to_cart').prop( "disabled", true );
 
 	  })
 	  
@@ -5119,7 +5119,7 @@ function processItemInFroms(data)
 				});
 			}
 			$('[name=price]:checked').trigger('click');
-			$('.add_to_cart').prop( "disabled", false );
+			// $('.add_to_cart').prop( "disabled", false );
 
 			window.addEventListener('load', function() {
 
